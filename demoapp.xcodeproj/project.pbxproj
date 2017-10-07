@@ -16,6 +16,10 @@
 		963B6F961F74F0AB00B2F400 /* demoappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B6F951F74F0AB00B2F400 /* demoappUITests.swift */; };
 		963B6FE11F75A30B00B2F400 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 963B6FDF1F75A30B00B2F400 /* Model.xcdatamodeld */; };
 		963B6FE31F75A68300B2F400 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B6FE21F75A68300B2F400 /* PlayerController.swift */; };
+		96DEFD581F87F09D0073415F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEFD571F87F09D0073415F /* HomeController.swift */; };
+		96DEFD5A1F87F0DA0073415F /* ActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEFD591F87F0DA0073415F /* ActivityController.swift */; };
+		96DEFD5C1F87F1020073415F /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEFD5B1F87F1020073415F /* PlaylistController.swift */; };
+		96DEFD5E1F87F1390073415F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEFD5D1F87F1390073415F /* SettingsController.swift */; };
 		96F1F1CE1F7ED3DA00B93D07 /* MotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1F1CD1F7ED3DA00B93D07 /* MotionController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,10 @@
 		963B6F971F74F0AB00B2F400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		963B6FE01F75A30B00B2F400 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		963B6FE21F75A68300B2F400 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		96DEFD571F87F09D0073415F /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		96DEFD591F87F0DA0073415F /* ActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityController.swift; sourceTree = "<group>"; };
+		96DEFD5B1F87F1020073415F /* PlaylistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
+		96DEFD5D1F87F1390073415F /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		96F1F1CD1F7ED3DA00B93D07 /* MotionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +146,10 @@
 				963B6F771F74F0AA00B2F400 /* ViewController.swift */,
 				96F1F1CD1F7ED3DA00B93D07 /* MotionController.swift */,
 				963B6FE21F75A68300B2F400 /* PlayerController.swift */,
+				96DEFD571F87F09D0073415F /* HomeController.swift */,
+				96DEFD591F87F0DA0073415F /* ActivityController.swift */,
+				96DEFD5B1F87F1020073415F /* PlaylistController.swift */,
+				96DEFD5D1F87F1390073415F /* SettingsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -276,8 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96DEFD5E1F87F1390073415F /* SettingsController.swift in Sources */,
 				963B6F781F74F0AA00B2F400 /* ViewController.swift in Sources */,
+				96DEFD5C1F87F1020073415F /* PlaylistController.swift in Sources */,
 				963B6F761F74F0AA00B2F400 /* AppDelegate.swift in Sources */,
+				96DEFD5A1F87F0DA0073415F /* ActivityController.swift in Sources */,
+				96DEFD581F87F09D0073415F /* HomeController.swift in Sources */,
 				963B6FE31F75A68300B2F400 /* PlayerController.swift in Sources */,
 				96F1F1CE1F7ED3DA00B93D07 /* MotionController.swift in Sources */,
 				963B6FE11F75A30B00B2F400 /* Model.xcdatamodeld in Sources */,
@@ -451,7 +467,7 @@
 				DEVELOPMENT_TEAM = A2SBKB36F6;
 				INFOPLIST_FILE = demoapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Jason.Sekhon.demoapp;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.Sekhon.TrackFastBlastMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -468,7 +484,7 @@
 				DEVELOPMENT_TEAM = A2SBKB36F6;
 				INFOPLIST_FILE = demoapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Jason.Sekhon.demoapp;
+				PRODUCT_BUNDLE_IDENTIFIER = Jason.Sekhon.TrackFastBlastMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
