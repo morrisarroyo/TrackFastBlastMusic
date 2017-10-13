@@ -19,6 +19,8 @@ class PlayerController: UIViewController {
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var prevBtn: UIButton!
     @IBOutlet weak var albumImage: UIImageView!
+    @IBOutlet weak var activityText: UILabel!
+    @IBOutlet weak var activityImage: UIButton!
     // Instantiate a new music player
     let myMediaPlayer = MPMusicPlayerApplicationController.applicationQueuePlayer
     let volumeSlider = (MPVolumeView().subviews.filter { NSStringFromClass($0.classForCoder) == "MPVolumeSlider" }.first as! UISlider)
@@ -47,6 +49,14 @@ class PlayerController: UIViewController {
         nowPlayingLabel.text = (myMediaPlayer.nowPlayingItem?.title)!
         artistLabel.text = (myMediaPlayer.nowPlayingItem?.artist!)!
         albumImage.image = myMediaPlayer.nowPlayingItem?.artwork?.image(at: (albumImage.bounds.size))
+    }
+    
+    func updateActivityText(){
+        
+    }
+    
+    func updateActivityImage(){
+        
     }
     
     @IBAction func sliderVolume(_ sender: AnyObject) {

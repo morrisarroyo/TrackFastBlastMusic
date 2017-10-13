@@ -20,7 +20,6 @@
 		96DEFD5A1F87F0DA0073415F /* ActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEFD591F87F0DA0073415F /* ActivityController.swift */; };
 		96DEFD5C1F87F1020073415F /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEFD5B1F87F1020073415F /* PlaylistController.swift */; };
 		96DEFD5E1F87F1390073415F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEFD5D1F87F1390073415F /* SettingsController.swift */; };
-		96F1F1CE1F7ED3DA00B93D07 /* MotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F1F1CD1F7ED3DA00B93D07 /* MotionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +59,6 @@
 		96DEFD591F87F0DA0073415F /* ActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityController.swift; sourceTree = "<group>"; };
 		96DEFD5B1F87F1020073415F /* PlaylistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
 		96DEFD5D1F87F1390073415F /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		96F1F1CD1F7ED3DA00B93D07 /* MotionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				963B6F771F74F0AA00B2F400 /* ViewController.swift */,
-				96F1F1CD1F7ED3DA00B93D07 /* MotionController.swift */,
 				963B6FE21F75A68300B2F400 /* PlayerController.swift */,
 				96DEFD571F87F09D0073415F /* HomeController.swift */,
 				96DEFD591F87F0DA0073415F /* ActivityController.swift */,
@@ -295,7 +292,6 @@
 				96DEFD5A1F87F0DA0073415F /* ActivityController.swift in Sources */,
 				96DEFD581F87F09D0073415F /* HomeController.swift in Sources */,
 				963B6FE31F75A68300B2F400 /* PlayerController.swift in Sources */,
-				96F1F1CE1F7ED3DA00B93D07 /* MotionController.swift in Sources */,
 				963B6FE11F75A30B00B2F400 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
