@@ -1,5 +1,5 @@
 //
-//  ActivityCellTableViewCell.swift
+//  PlaylistSongTableViewCell.swift
 //  demoapp
 //
 //  Created by Morris Arroyo on 2017-11-17.
@@ -8,8 +8,11 @@
 
 import UIKit
 
-class ActivityCellTableViewCell: UITableViewCell {
+class PlaylistSongTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var activityImg: UIImageView!
+    @IBOutlet weak var editImg: UIImageView!
+    @IBOutlet weak var activityLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

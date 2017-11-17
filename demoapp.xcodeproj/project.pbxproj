@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		96321D831F969037003A248D /* ActivityCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96321D821F969037003A248D /* ActivityCellTableViewCell.swift */; };
 		963B6F761F74F0AA00B2F400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B6F751F74F0AA00B2F400 /* AppDelegate.swift */; };
 		963B6F781F74F0AA00B2F400 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B6F771F74F0AA00B2F400 /* ViewController.swift */; };
 		963B6F7B1F74F0AA00B2F400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963B6F791F74F0AA00B2F400 /* Main.storyboard */; };
@@ -17,11 +16,17 @@
 		963B6F961F74F0AB00B2F400 /* demoappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B6F951F74F0AB00B2F400 /* demoappUITests.swift */; };
 		963B6FE11F75A30B00B2F400 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 963B6FDF1F75A30B00B2F400 /* Model.xcdatamodeld */; };
 		963B6FE31F75A68300B2F400 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B6FE21F75A68300B2F400 /* PlayerController.swift */; };
-		967264761FB3817E00B22E05 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967264751FB3817D00B22E05 /* ActivityTableViewController.swift */; };
-		967264781FB382A100B22E05 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967264771FB382A100B22E05 /* Activity.swift */; };
 		96DEFD581F87F09D0073415F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEFD571F87F09D0073415F /* HomeController.swift */; };
 		96DEFD5C1F87F1020073415F /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEFD5B1F87F1020073415F /* PlaylistController.swift */; };
 		96DEFD5E1F87F1390073415F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEFD5D1F87F1390073415F /* SettingsController.swift */; };
+		DD92CF4D1FBF696000F69B7A /* ActivityCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF4C1FBF696000F69B7A /* ActivityCellTableViewCell.swift */; };
+		DD92CF521FBF69DF00F69B7A /* ActivityRightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF4E1FBF69DF00F69B7A /* ActivityRightTableViewCell.swift */; };
+		DD92CF531FBF69DF00F69B7A /* PlaylistSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF4F1FBF69DF00F69B7A /* PlaylistSongTableViewCell.swift */; };
+		DD92CF541FBF69DF00F69B7A /* ActivityLeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF501FBF69DF00F69B7A /* ActivityLeftTableViewCell.swift */; };
+		DD92CF551FBF69DF00F69B7A /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF511FBF69DF00F69B7A /* ActivityType.swift */; };
+		DD92CF5B1FBF6AAD00F69B7A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF5A1FBF6AAD00F69B7A /* Song.swift */; };
+		DD92CF5D1FBF6AF400F69B7A /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF5C1FBF6AF400F69B7A /* Activity.swift */; };
+		DD92CF5F1FBF6C1300F69B7A /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF5E1FBF6C1300F69B7A /* ActivityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		96321D821F969037003A248D /* ActivityCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCellTableViewCell.swift; sourceTree = "<group>"; };
 		963B6F721F74F0AA00B2F400 /* demoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		963B6F751F74F0AA00B2F400 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		963B6F771F74F0AA00B2F400 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,11 +62,17 @@
 		963B6F971F74F0AB00B2F400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		963B6FE01F75A30B00B2F400 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		963B6FE21F75A68300B2F400 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
-		967264751FB3817D00B22E05 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
-		967264771FB382A100B22E05 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		96DEFD571F87F09D0073415F /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		96DEFD5B1F87F1020073415F /* PlaylistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
 		96DEFD5D1F87F1390073415F /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		DD92CF4C1FBF696000F69B7A /* ActivityCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCellTableViewCell.swift; sourceTree = "<group>"; };
+		DD92CF4E1FBF69DF00F69B7A /* ActivityRightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityRightTableViewCell.swift; sourceTree = "<group>"; };
+		DD92CF4F1FBF69DF00F69B7A /* PlaylistSongTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistSongTableViewCell.swift; sourceTree = "<group>"; };
+		DD92CF501FBF69DF00F69B7A /* ActivityLeftTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLeftTableViewCell.swift; sourceTree = "<group>"; };
+		DD92CF511FBF69DF00F69B7A /* ActivityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
+		DD92CF5A1FBF6AAD00F69B7A /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		DD92CF5C1FBF6AF400F69B7A /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		DD92CF5E1FBF6C1300F69B7A /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +123,11 @@
 		963B6F741F74F0AA00B2F400 /* demoapp */ = {
 			isa = PBXGroup;
 			children = (
+				DD92CF591FBF6A9B00F69B7A /* Models */,
+				DD92CF501FBF69DF00F69B7A /* ActivityLeftTableViewCell.swift */,
+				DD92CF4E1FBF69DF00F69B7A /* ActivityRightTableViewCell.swift */,
+				DD92CF511FBF69DF00F69B7A /* ActivityType.swift */,
+				DD92CF4F1FBF69DF00F69B7A /* PlaylistSongTableViewCell.swift */,
 				96F1F1CF1F83FD3F00B93D07 /* Controllers */,
 				963B6F751F74F0AA00B2F400 /* AppDelegate.swift */,
 				963B6F7C1F74F0AA00B2F400 /* Assets.xcassets */,
@@ -120,7 +135,6 @@
 				963B6F791F74F0AA00B2F400 /* Main.storyboard */,
 				963B6F811F74F0AA00B2F400 /* Info.plist */,
 				963B6FDF1F75A30B00B2F400 /* Model.xcdatamodeld */,
-				967264771FB382A100B22E05 /* Activity.swift */,
 			);
 			path = demoapp;
 			sourceTree = "<group>";
@@ -150,11 +164,20 @@
 				963B6FE21F75A68300B2F400 /* PlayerController.swift */,
 				96DEFD571F87F09D0073415F /* HomeController.swift */,
 				96DEFD5B1F87F1020073415F /* PlaylistController.swift */,
-				96321D821F969037003A248D /* ActivityCellTableViewCell.swift */,
 				96DEFD5D1F87F1390073415F /* SettingsController.swift */,
-				967264751FB3817D00B22E05 /* ActivityTableViewController.swift */,
+				DD92CF4C1FBF696000F69B7A /* ActivityCellTableViewCell.swift */,
+				DD92CF5E1FBF6C1300F69B7A /* ActivityViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD92CF591FBF6A9B00F69B7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD92CF5A1FBF6AAD00F69B7A /* Song.swift */,
+				DD92CF5C1FBF6AF400F69B7A /* Activity.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,16 +314,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				967264781FB382A100B22E05 /* Activity.swift in Sources */,
+				DD92CF531FBF69DF00F69B7A /* PlaylistSongTableViewCell.swift in Sources */,
 				96DEFD5E1F87F1390073415F /* SettingsController.swift in Sources */,
+				DD92CF5D1FBF6AF400F69B7A /* Activity.swift in Sources */,
 				963B6F781F74F0AA00B2F400 /* ViewController.swift in Sources */,
+				DD92CF541FBF69DF00F69B7A /* ActivityLeftTableViewCell.swift in Sources */,
+				DD92CF551FBF69DF00F69B7A /* ActivityType.swift in Sources */,
 				96DEFD5C1F87F1020073415F /* PlaylistController.swift in Sources */,
 				963B6F761F74F0AA00B2F400 /* AppDelegate.swift in Sources */,
 				96DEFD581F87F09D0073415F /* HomeController.swift in Sources */,
-				967264761FB3817E00B22E05 /* ActivityTableViewController.swift in Sources */,
-				96321D831F969037003A248D /* ActivityCellTableViewCell.swift in Sources */,
+				DD92CF4D1FBF696000F69B7A /* ActivityCellTableViewCell.swift in Sources */,
 				963B6FE31F75A68300B2F400 /* PlayerController.swift in Sources */,
 				963B6FE11F75A30B00B2F400 /* Model.xcdatamodeld in Sources */,
+				DD92CF5B1FBF6AAD00F69B7A /* Song.swift in Sources */,
+				DD92CF5F1FBF6C1300F69B7A /* ActivityViewController.swift in Sources */,
+				DD92CF521FBF69DF00F69B7A /* ActivityRightTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

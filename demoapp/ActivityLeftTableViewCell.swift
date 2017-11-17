@@ -1,15 +1,19 @@
 //
-//  ActivityCellTableViewCell.swift
+//  ActivityLeftTableViewCell.swift
 //  demoapp
 //
-//  Created by Morris Arroyo on 2017-11-17.
+//  Created by Morris Arroyo on 2017-11-16.
 //  Copyright © 2017 Jason Sekhon. All rights reserved.
 //
 
 import UIKit
 
-class ActivityCellTableViewCell: UITableViewCell {
+class ActivityLeftTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var activityImage: UIImageView!
+    @IBOutlet weak var activityName: UILabel!
+    @IBOutlet weak var editImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

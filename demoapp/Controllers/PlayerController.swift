@@ -37,7 +37,7 @@ class PlayerController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {	
         myMediaPlayer.stop()
     }
     
