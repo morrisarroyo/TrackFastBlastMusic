@@ -10,8 +10,6 @@ import UIKit
 import CoreMotion
 
 class HomeController: UIViewController {
-    // This array keeps track of all obstacle views
-    var obstacleViews : [UIView] = []
     @IBOutlet weak var CurrentlyPlayingView: UIView!
     @IBOutlet weak var activityImage: UIImageView!
     @IBOutlet weak var activityText: UILabel!
