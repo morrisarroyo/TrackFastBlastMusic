@@ -37,7 +37,7 @@ class PlayerController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {	
         myMediaPlayer.stop()
     }
     
@@ -68,10 +68,10 @@ class PlayerController: UIViewController {
         print(myMediaPlayer.playbackState.rawValue)
         if (myMediaPlayer.playbackState.rawValue == 1){
             myMediaPlayer.pause()
-            playBtn.setTitle("Play", for: .normal)
+            playBtn.setImage(UIImage(named: "icons8-Circled Play_2"), for: .normal)
         } else if (myMediaPlayer.playbackState.rawValue == 2 || myMediaPlayer.playbackState.rawValue == 0){
             myMediaPlayer.play()
-            playBtn.setTitle("Pause", for: .normal)
+            playBtn.setImage(UIImage(named: "icons8-Pause Button_2"), for: .normal)
         }
         updateSongTitle()
     }

@@ -19,14 +19,14 @@
 		96DEFD581F87F09D0073415F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEFD571F87F09D0073415F /* HomeController.swift */; };
 		96DEFD5C1F87F1020073415F /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEFD5B1F87F1020073415F /* PlaylistController.swift */; };
 		96DEFD5E1F87F1390073415F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEFD5D1F87F1390073415F /* SettingsController.swift */; };
-		9A49E3A71FBE894C006AF0F7 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49E3A61FBE894C006AF0F7 /* ActivityTableViewController.swift */; };
-		9A49E3AC1FBE8A44006AF0F7 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49E3AB1FBE8A44006AF0F7 /* Activity.swift */; };
-		9A49E3AE1FBE8A78006AF0F7 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49E3AD1FBE8A78006AF0F7 /* ActivityType.swift */; };
-		9A49E3B01FBE96E1006AF0F7 /* ActivityLeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49E3AF1FBE96E1006AF0F7 /* ActivityLeftTableViewCell.swift */; };
-		9A49E3B21FBE96FC006AF0F7 /* ActivityRightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49E3B11FBE96FC006AF0F7 /* ActivityRightTableViewCell.swift */; };
-		9A49E3B41FBE9882006AF0F7 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49E3B31FBE9882006AF0F7 /* ActivityViewController.swift */; };
-		9A7ACD231FBEEA1B00CF409B /* PlaylistSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7ACD221FBEEA1B00CF409B /* PlaylistSongTableViewCell.swift */; };
-		9A7ACD251FBEEFDE00CF409B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7ACD241FBEEFDE00CF409B /* Song.swift */; };
+		DD92CF4D1FBF696000F69B7A /* ActivityCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF4C1FBF696000F69B7A /* ActivityCellTableViewCell.swift */; };
+		DD92CF521FBF69DF00F69B7A /* ActivityRightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF4E1FBF69DF00F69B7A /* ActivityRightTableViewCell.swift */; };
+		DD92CF531FBF69DF00F69B7A /* PlaylistSongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF4F1FBF69DF00F69B7A /* PlaylistSongTableViewCell.swift */; };
+		DD92CF541FBF69DF00F69B7A /* ActivityLeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF501FBF69DF00F69B7A /* ActivityLeftTableViewCell.swift */; };
+		DD92CF551FBF69DF00F69B7A /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF511FBF69DF00F69B7A /* ActivityType.swift */; };
+		DD92CF5B1FBF6AAD00F69B7A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF5A1FBF6AAD00F69B7A /* Song.swift */; };
+		DD92CF5D1FBF6AF400F69B7A /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF5C1FBF6AF400F69B7A /* Activity.swift */; };
+		DD92CF5F1FBF6C1300F69B7A /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD92CF5E1FBF6C1300F69B7A /* ActivityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,14 +65,14 @@
 		96DEFD571F87F09D0073415F /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		96DEFD5B1F87F1020073415F /* PlaylistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
 		96DEFD5D1F87F1390073415F /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		9A49E3A61FBE894C006AF0F7 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
-		9A49E3AB1FBE8A44006AF0F7 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
-		9A49E3AD1FBE8A78006AF0F7 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
-		9A49E3AF1FBE96E1006AF0F7 /* ActivityLeftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLeftTableViewCell.swift; sourceTree = "<group>"; };
-		9A49E3B11FBE96FC006AF0F7 /* ActivityRightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRightTableViewCell.swift; sourceTree = "<group>"; };
-		9A49E3B31FBE9882006AF0F7 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
-		9A7ACD221FBEEA1B00CF409B /* PlaylistSongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistSongTableViewCell.swift; sourceTree = "<group>"; };
-		9A7ACD241FBEEFDE00CF409B /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		DD92CF4C1FBF696000F69B7A /* ActivityCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCellTableViewCell.swift; sourceTree = "<group>"; };
+		DD92CF4E1FBF69DF00F69B7A /* ActivityRightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityRightTableViewCell.swift; sourceTree = "<group>"; };
+		DD92CF4F1FBF69DF00F69B7A /* PlaylistSongTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistSongTableViewCell.swift; sourceTree = "<group>"; };
+		DD92CF501FBF69DF00F69B7A /* ActivityLeftTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLeftTableViewCell.swift; sourceTree = "<group>"; };
+		DD92CF511FBF69DF00F69B7A /* ActivityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityType.swift; sourceTree = "<group>"; };
+		DD92CF5A1FBF6AAD00F69B7A /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		DD92CF5C1FBF6AF400F69B7A /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		DD92CF5E1FBF6C1300F69B7A /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,17 +123,17 @@
 		963B6F741F74F0AA00B2F400 /* demoapp */ = {
 			isa = PBXGroup;
 			children = (
-				963B6F751F74F0AA00B2F400 /* AppDelegate.swift */,
-				9A49E3AF1FBE96E1006AF0F7 /* ActivityLeftTableViewCell.swift */,
-				9A49E3B11FBE96FC006AF0F7 /* ActivityRightTableViewCell.swift */,
-				9A49E3AD1FBE8A78006AF0F7 /* ActivityType.swift */,
-				9A7ACD221FBEEA1B00CF409B /* PlaylistSongTableViewCell.swift */,
-				9A49E3AA1FBE8A2A006AF0F7 /* Models */,
+				DD92CF591FBF6A9B00F69B7A /* Models */,
+				DD92CF501FBF69DF00F69B7A /* ActivityLeftTableViewCell.swift */,
+				DD92CF4E1FBF69DF00F69B7A /* ActivityRightTableViewCell.swift */,
+				DD92CF511FBF69DF00F69B7A /* ActivityType.swift */,
+				DD92CF4F1FBF69DF00F69B7A /* PlaylistSongTableViewCell.swift */,
 				96F1F1CF1F83FD3F00B93D07 /* Controllers */,
+				963B6F751F74F0AA00B2F400 /* AppDelegate.swift */,
+				963B6F7C1F74F0AA00B2F400 /* Assets.xcassets */,
 				963B6F7E1F74F0AA00B2F400 /* LaunchScreen.storyboard */,
 				963B6F791F74F0AA00B2F400 /* Main.storyboard */,
 				963B6F811F74F0AA00B2F400 /* Info.plist */,
-				963B6F7C1F74F0AA00B2F400 /* Assets.xcassets */,
 				963B6FDF1F75A30B00B2F400 /* Model.xcdatamodeld */,
 			);
 			path = demoapp;
@@ -160,22 +160,22 @@
 		96F1F1CF1F83FD3F00B93D07 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9A49E3A61FBE894C006AF0F7 /* ActivityTableViewController.swift */,
 				963B6F771F74F0AA00B2F400 /* ViewController.swift */,
 				963B6FE21F75A68300B2F400 /* PlayerController.swift */,
 				96DEFD571F87F09D0073415F /* HomeController.swift */,
 				96DEFD5B1F87F1020073415F /* PlaylistController.swift */,
 				96DEFD5D1F87F1390073415F /* SettingsController.swift */,
-				9A49E3B31FBE9882006AF0F7 /* ActivityViewController.swift */,
+				DD92CF4C1FBF696000F69B7A /* ActivityCellTableViewCell.swift */,
+				DD92CF5E1FBF6C1300F69B7A /* ActivityViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		9A49E3AA1FBE8A2A006AF0F7 /* Models */ = {
+		DD92CF591FBF6A9B00F69B7A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9A49E3AB1FBE8A44006AF0F7 /* Activity.swift */,
-				9A7ACD241FBEEFDE00CF409B /* Song.swift */,
+				DD92CF5A1FBF6AAD00F69B7A /* Song.swift */,
+				DD92CF5C1FBF6AF400F69B7A /* Activity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -314,21 +314,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A49E3AC1FBE8A44006AF0F7 /* Activity.swift in Sources */,
-				9A49E3A71FBE894C006AF0F7 /* ActivityTableViewController.swift in Sources */,
-				9A49E3B21FBE96FC006AF0F7 /* ActivityRightTableViewCell.swift in Sources */,
+				DD92CF531FBF69DF00F69B7A /* PlaylistSongTableViewCell.swift in Sources */,
 				96DEFD5E1F87F1390073415F /* SettingsController.swift in Sources */,
-				9A49E3B01FBE96E1006AF0F7 /* ActivityLeftTableViewCell.swift in Sources */,
+				DD92CF5D1FBF6AF400F69B7A /* Activity.swift in Sources */,
 				963B6F781F74F0AA00B2F400 /* ViewController.swift in Sources */,
-				9A7ACD231FBEEA1B00CF409B /* PlaylistSongTableViewCell.swift in Sources */,
+				DD92CF541FBF69DF00F69B7A /* ActivityLeftTableViewCell.swift in Sources */,
+				DD92CF551FBF69DF00F69B7A /* ActivityType.swift in Sources */,
 				96DEFD5C1F87F1020073415F /* PlaylistController.swift in Sources */,
 				963B6F761F74F0AA00B2F400 /* AppDelegate.swift in Sources */,
-				9A7ACD251FBEEFDE00CF409B /* Song.swift in Sources */,
-				9A49E3B41FBE9882006AF0F7 /* ActivityViewController.swift in Sources */,
 				96DEFD581F87F09D0073415F /* HomeController.swift in Sources */,
-				9A49E3AE1FBE8A78006AF0F7 /* ActivityType.swift in Sources */,
+				DD92CF4D1FBF696000F69B7A /* ActivityCellTableViewCell.swift in Sources */,
 				963B6FE31F75A68300B2F400 /* PlayerController.swift in Sources */,
 				963B6FE11F75A30B00B2F400 /* Model.xcdatamodeld in Sources */,
+				DD92CF5B1FBF6AAD00F69B7A /* Song.swift in Sources */,
+				DD92CF5F1FBF6C1300F69B7A /* ActivityViewController.swift in Sources */,
+				DD92CF521FBF69DF00F69B7A /* ActivityRightTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,13 +493,13 @@
 		963B6F9B1F74F0AB00B2F400 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A2SBKB36F6;
+				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = demoapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Jason.Sekhon.TrackFastBlastMusic;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jason.Sekhon-1.TrackFastBlastMusic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -510,13 +510,13 @@
 		963B6F9C1F74F0AB00B2F400 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A2SBKB36F6;
+				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = demoapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Jason.Sekhon.TrackFastBlastMusic;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jason.Sekhon-1.TrackFastBlastMusic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

@@ -1,4 +1,4 @@
-
+demoapp.xcodeproj/project.pbxproj
 # Created by https://www.gitignore.io/api/macos,xcode,swift,cocoapods
 
 ### CocoaPods ###
@@ -11,6 +11,7 @@ Pods/
 
 ### macOS ###
 *.DS_Store
+.DS_Store
 .AppleDouble
 .LSOverride
 

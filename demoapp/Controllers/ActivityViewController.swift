@@ -9,7 +9,7 @@
 import UIKit
 
 class ActivityViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     @IBOutlet weak var activityTableView: UITableView!
     private var activities = [Activity]()
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ class ActivityViewController: UIViewController, UITableViewDataSource, UITableVi
         }
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -59,13 +59,13 @@ class ActivityViewController: UIViewController, UITableViewDataSource, UITableVi
         performSegue(withIdentifier: "ShowPlaylistSongsSegue", sender: cell)
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

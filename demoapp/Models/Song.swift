@@ -21,3 +21,4 @@ class Song: NSObject {
         self.playlistId = playlistId
     }
 }
+
