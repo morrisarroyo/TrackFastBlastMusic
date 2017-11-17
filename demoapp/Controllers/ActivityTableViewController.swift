@@ -10,6 +10,10 @@ import UIKit
 
 class ActivityTableViewController: UITableViewController {
 
+    // MARK: - Properties
+    
+    var data = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +27,12 @@ class ActivityTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - Private Methods
+    
+    private func loadData(){
+        
     }
 
     // MARK: - Table view data source
