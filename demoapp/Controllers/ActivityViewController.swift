@@ -12,15 +12,12 @@ class ActivityViewController: UIViewController, UITableViewDataSource, UITableVi
 
     @IBOutlet weak var activityTableView: UITableView!
     private var activities = [Activity]()
-    private var cellCount:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         activityTableView.dataSource = self
         activityTableView.delegate   = self
-        print("\(ActivityType.all[0].description) \(ActivityType.all[0].rawValue)")
         for act in ActivityType.all {
             activities.append(Activity(name: act.description, type: act.rawValue))
-            print("\(act.description) \(act.rawValue)")
         }
         // Do any additional setup after loading the view.
     }
@@ -38,14 +35,13 @@ class ActivityViewController: UIViewController, UITableViewDataSource, UITableVi
         let leftCellId  = "ActivityLeftTableViewCell"
         let rightCellId = "ActivityRightTableViewCell"
         let activity = activities[indexPath.row]
-        if (cellCount % 2  == 0) {
+        if (indexPath.row % 2  == 0) {
             guard let cell = activityTableView.dequeueReusableCell(withIdentifier: leftCellId) as? ActivityLeftTableViewCell else {
                 fatalError("ActivityViewController, the dequeued cell is not an instance of ActivityLeftTableViewCell")
             }
             cell.activityImage.image = UIImage(named: activity.name)
             cell.activityName.text = activity.name
             cell.editImage.image = #imageLiteral(resourceName: "icons8-Edit Filled")
-            cellCount += 1
             return cell
         } else {
             guard let cell = activityTableView.dequeueReusableCell(withIdentifier: rightCellId) as? ActivityRightTableViewCell else {
@@ -54,12 +50,13 @@ class ActivityViewController: UIViewController, UITableViewDataSource, UITableVi
             cell.activityImage.image = UIImage(named: activity.name)
             cell.activityName.text = activity.name
             cell.editImage.image = #imageLiteral(resourceName: "icons8-Edit")
-            cellCount += 1
             return cell
         }
-        
-        
-        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        performSegue(withIdentifier: "ShowPlaylistSongsSegue", sender: cell)
     }
     /*
     // MARK: - Navigation
