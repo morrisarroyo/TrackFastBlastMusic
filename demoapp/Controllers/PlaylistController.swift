@@ -8,8 +8,9 @@
 
 import UIKit
 import CoreData
+import MediaPlayer
 
-class PlaylistController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class PlaylistController: UIViewController, UITableViewDataSource, UITableViewDelegate, MPMediaPickerControllerDelegate {
     
     @IBOutlet weak var playlistTableView: UITableView!
     
@@ -25,6 +26,25 @@ class PlaylistController: UIViewController, UITableViewDataSource, UITableViewDe
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func addSongsButtonPressed(_ sender: Any) {
+        let musicPicker = MPMediaPickerController(mediaTypes: MPMediaType.music)
+        musicPicker.allowsPickingMultipleItems = true
+        musicPicker.popoverPresentationController?.sourceView = sender as? UIView
+        musicPicker.delegate = self
+        self.present(musicPicker, animated: true, completion: nil)
+    }
+    
+    func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
+        for song in mediaItemCollection.items {
+            print("\(song.value(forProperty: MPMediaItemPropertyTitle)) ID:\(song.value(forProperty: MPMediaItemPropertyPersistentID))")
+        }
+        mediaPicker.dismiss(animated: true, completion: nil)
+    }
+    
+    func mediaPickerDidCancel(_ mediaPicker: MPMediaPickerController) {
+        mediaPicker.dismiss(animated: true, completion: nil)
     }
     
     
