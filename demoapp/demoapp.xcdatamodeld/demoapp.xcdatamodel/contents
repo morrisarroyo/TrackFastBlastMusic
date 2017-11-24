@@ -10,6 +10,11 @@
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="activity" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" inverseName="songs" inverseEntity="Activity" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <elements>
         <element name="Activity" positionX="-63" positionY="-18" width="128" height="88"/>
