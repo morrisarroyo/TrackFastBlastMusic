@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
 class ActivityViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+    var managedObjectContext: NSManagedObjectContext!
     @IBOutlet weak var activityTableView: UITableView!
     private var activities = [Activity]()
     override func viewDidLoad() {
@@ -17,7 +18,11 @@ class ActivityViewController: UIViewController, UITableViewDataSource, UITableVi
         activityTableView.dataSource = self
         activityTableView.delegate   = self
         for act in ActivityType.all {
-            activities.append(Activity(name: act.description, type: act.rawValue))
+            //let activity = NSEntityDescription.insertNewObject(forEntityName: "Activity", into: managedObjectContext)
+            let activity = Activity(context: managedObjectContext)
+            activity.id   = Int32(act.rawValue)
+            activity.name = act.description
+            //activities.append(Activity(entity: act.description, insertInto: act.rawValue))
         }
         // Do any additional setup after loading the view.
     }
@@ -39,7 +44,7 @@ class ActivityViewController: UIViewController, UITableViewDataSource, UITableVi
             guard let cell = activityTableView.dequeueReusableCell(withIdentifier: leftCellId) as? ActivityLeftTableViewCell else {
                 fatalError("ActivityViewController, the dequeued cell is not an instance of ActivityLeftTableViewCell")
             }
-            cell.activityImage.image = UIImage(named: activity.name)
+            cell.activityImage.image = UIImage(named: activity.name!)
             cell.activityName.text = activity.name
             cell.editImage.image = #imageLiteral(resourceName: "icons8-Edit Filled")
             return cell
@@ -47,7 +52,7 @@ class ActivityViewController: UIViewController, UITableViewDataSource, UITableVi
             guard let cell = activityTableView.dequeueReusableCell(withIdentifier: rightCellId) as? ActivityRightTableViewCell else {
                 fatalError("ActivityViewController, the dequeued cell is not an instance of ActivityRightTableViewCell")
             }
-            cell.activityImage.image = UIImage(named: activity.name)
+            cell.activityImage.image = UIImage(named: activity.name!)
             cell.activityName.text = activity.name
             cell.editImage.image = #imageLiteral(resourceName: "icons8-Edit")
             return cell

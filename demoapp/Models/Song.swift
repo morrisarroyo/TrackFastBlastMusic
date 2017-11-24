@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import CoreData
+import Foundation
 
-class Song: NSObject {
-    var title: String
-    var artist: String
+class Song: NSManagedObject {
+    @NSManaged var title: String
+    @NSManaged var artist: String
     var albumCover: UIImage
     var playlistId: Int
     

@@ -10,10 +10,10 @@ import UIKit
 
 class Activity: NSObject {
     var name: String
-    var type: Int
+    var id: Int
     
-    init(name: String, type: Int) {
+    init(name: String, id: Int) {
         self.name   = name
-        self.type   = type
+        self.id   = id
     }
 }
