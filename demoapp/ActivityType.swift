@@ -11,7 +11,7 @@ import UIKit
 enum ActivityType: Int, CustomStringConvertible {
     case stationary, walking, running, cycling, transit, driving
     
-    static let count: Int = 6
+    static let count: Int = all.count
     static let all = [stationary, walking, running, cycling, transit, driving]
     var description: String {
         switch self {
