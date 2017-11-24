@@ -81,6 +81,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="albumCover" destination="ejd-5h-1tf" id="VJd-R0-CxR"/>
+                                            <outlet property="artist" destination="eIB-jM-ZMG" id="0sC-GC-YXL"/>
+                                            <outlet property="title" destination="Ubl-4a-yBO" id="LNn-Pv-a0c"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaylistAddSongTableViewCell" rowHeight="50" id="0tl-31-q5x">
                                         <rect key="frame" x="0.0" y="78" width="414" height="50"/>
