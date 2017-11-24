@@ -15,6 +15,7 @@ class PlaylistController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var playlistTableView: UITableView!
     
     private var playlist = [Song]()
+    var activity: Activity!
     var managedObjectContext: NSManagedObjectContext!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,11 +39,12 @@ class PlaylistController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
         for song in mediaItemCollection.items {
-            print("\(song.value(forProperty: MPMediaItemPropertyTitle)) ID:\(song.value(forProperty: MPMediaItemPropertyPersistentID))")
+            print("\(String(describing: song.value(forProperty: MPMediaItemPropertyTitle))) ID:\(String(describing: song.value(forProperty: MPMediaItemPropertyPersistentID)))")
             let music = Song(context: managedObjectContext)
             music.id = song.value(forProperty: MPMediaItemPropertyPersistentID) as? String
             music.title = song.value(forProperty: MPMediaItemPropertyTitle) as? String
             music.artist = song.value(forProperty: MPMediaItemPropertyArtist) as? String
+            music.activity = self.activity
             do {
                 try managedObjectContext.save()
             } catch {
