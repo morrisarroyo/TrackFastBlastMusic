@@ -39,12 +39,13 @@ class PlaylistController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
         for song in mediaItemCollection.items {
-            print("\(String(describing: song.value(forProperty: MPMediaItemPropertyTitle))) ID:\(String(describing: song.value(forProperty: MPMediaItemPropertyPersistentID)))")
+            print("\(describing: song.value(forProperty: MPMediaItemPropertyTitle)) ID:\( song.value(forProperty: MPMediaItemPropertyPersistentID))")
             let music = Song(context: managedObjectContext)
-            music.id = song.value(forProperty: MPMediaItemPropertyPersistentID) as? String
+            music.activity = self.activity
+            
+            music.id = (song.value(forProperty: MPMediaItemPropertyPersistentID) as? Int64)!
             music.title = song.value(forProperty: MPMediaItemPropertyTitle) as? String
             music.artist = song.value(forProperty: MPMediaItemPropertyArtist) as? String
-            music.activity = self.activity
             do {
                 try managedObjectContext.save()
             } catch {
