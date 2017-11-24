@@ -8,12 +8,14 @@
 
 import UIKit
 import CoreMotion
+import CoreData
 
 class HomeController: UIViewController {
     @IBOutlet weak var CurrentlyPlayingView: UIView!
     @IBOutlet weak var activityImage: UIImageView!
     @IBOutlet weak var activityText: UILabel!
     
+    var managedObjectContext: NSManagedObjectContext!
     let activityManager = CMMotionActivityManager()
     
     override func viewDidLoad() {
@@ -90,6 +92,12 @@ class HomeController: UIViewController {
         if obstacleViewFrame.contains(touchLocation) {
             print("test2")
             performSegue(withIdentifier: "showPlayer", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationViewController = segue.destination as? ActivityViewController {
+            destinationViewController.managedObjectContext = self.managedObjectContext
         }
     }
 
