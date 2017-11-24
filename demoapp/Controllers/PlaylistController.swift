@@ -85,9 +85,11 @@ class PlaylistController: UIViewController, UITableViewDataSource, UITableViewDe
         let predicate = MPMediaPropertyPredicate(value: playlist[indexPath.row].id, forProperty: MPMediaItemPropertyPersistentID)
         let songQuery = MPMediaQuery()
         songQuery.addFilterPredicate(predicate)
-        if let items = songQuery.items, items.count > 0 {
-            let song = items[0]
-            cell.albumCover.image = song.value(forProperty: MPMediaItemPropertyArtwork) as? UIImage
+        if let items = songQuery.items {
+            if (items.count > 0) {
+                let song = items[0]
+                cell.albumCover.image = song.value(forProperty: MPMediaItemPropertyArtwork) as? UIImage
+            }
         }
         if cell.albumCover == nil {
             cell.albumCover.image = #imageLiteral(resourceName: "iTunesArtwork")
