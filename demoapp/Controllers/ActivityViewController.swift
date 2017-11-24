@@ -79,6 +79,8 @@ class ActivityViewController: UIViewController, UITableViewDataSource, UITableVi
      // Pass the selected object to the new view controller.
         if let destinationViewController = segue.destination as? PlaylistController {
             destinationViewController.managedObjectContext = self.managedObjectContext
+            let index = activityTableView.indexPath(for: (sender as? UITableViewCell)!)?.row
+            destinationViewController.activity = activities[index!]
         }
      }
     
