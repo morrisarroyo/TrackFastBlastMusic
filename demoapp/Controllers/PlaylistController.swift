@@ -15,7 +15,7 @@ class PlaylistController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var playlistTableView: UITableView!
     
     private var playlist = [Song]()
-    
+    var managedObjectContext: NSManagedObjectContext!
     override func viewDidLoad() {
         super.viewDidLoad()
         playlistTableView.dataSource = self
@@ -39,6 +39,16 @@ class PlaylistController: UIViewController, UITableViewDataSource, UITableViewDe
     func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
         for song in mediaItemCollection.items {
             print("\(song.value(forProperty: MPMediaItemPropertyTitle)) ID:\(song.value(forProperty: MPMediaItemPropertyPersistentID))")
+            let music = Song(context: managedObjectContext)
+            music.id = song.value(forProperty: MPMediaItemPropertyPersistentID) as? String
+            music.title = song.value(forProperty: MPMediaItemPropertyTitle) as? String
+            music.artist = song.value(forProperty: MPMediaItemPropertyArtist) as? String
+            do {
+                try managedObjectContext.save()
+            } catch {
+                fatalError("Failure to save context: \(error)")
+            }
+            playlist.append(music)
         }
         mediaPicker.dismiss(animated: true, completion: nil)
     }
@@ -59,6 +69,7 @@ class PlaylistController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let cell = playlistTableView.dequeueReusableCell(withIdentifier: "PlaylistAddSongTableViewCell")
+        
         return cell
     }
     
@@ -66,7 +77,19 @@ class PlaylistController: UIViewController, UITableViewDataSource, UITableViewDe
         guard let cell = playlistTableView.dequeueReusableCell(withIdentifier: "PlaylistSongTableViewCell", for: indexPath) as? PlaylistSongTableViewCell else {
             fatalError("PlaylistController, the dequeued cell is not an instance of PlaylistSongTableViewCell")
         }
-        
+        cell.title.text = playlist[indexPath.row].title
+        cell.artist.text = playlist[indexPath.row].artist
+        cell.albumCover.image = nil
+        let predicate = MPMediaPropertyPredicate(value: playlist[indexPath.row].id, forProperty: MPMediaItemPropertyPersistentID)
+        let songQuery = MPMediaQuery()
+        songQuery.addFilterPredicate(predicate)
+        if let items = songQuery.items, items.count > 0 {
+            let song = items[0]
+            cell.albumCover.image = song.value(forProperty: MPMediaItemPropertyArtwork) as? UIImage
+        }
+        if cell.albumCover == nil {
+            cell.albumCover.image = #imageLiteral(resourceName: "iTunesArtwork")
+        }
         return cell
     }
     
