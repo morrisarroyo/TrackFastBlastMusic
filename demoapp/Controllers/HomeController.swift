@@ -83,12 +83,10 @@ class HomeController: UIViewController {
         // Get the first touch and its location in this view controller's view coordinate system
         let touch = touches.allObjects[0] as! UITouch
         let touchLocation = touch.location(in: self.view)
-        print("test1")
         // Convert the location of the obstacle view to this view controller's view coordinate system
         let obstacleViewFrame = self.view.convert(CurrentlyPlayingView.frame, from: CurrentlyPlayingView.superview)
         // Check if the touch is inside the obstacle view
         if obstacleViewFrame.contains(touchLocation) {
-            print("test2")
             performSegue(withIdentifier: "showPlayer", sender: nil)
         }
     }
