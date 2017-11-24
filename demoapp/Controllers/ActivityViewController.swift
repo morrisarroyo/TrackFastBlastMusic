@@ -70,7 +70,7 @@ class ActivityViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
-        activity = activities[indexPath.row]
+        
         performSegue(withIdentifier: "ShowPlaylistSongsSegue", sender: cell)
     }
     
@@ -83,8 +83,8 @@ class ActivityViewController: UIViewController, UITableViewDataSource, UITableVi
         if let destinationViewController = segue.destination as? PlaylistController {
             destinationViewController.managedObjectContext = self.managedObjectContext
             let index = activityTableView.indexPath(for: (sender as? UITableViewCell)!)?.row
-            destinationViewController.activity = self.activity
-            print(activities[index!])
+            print(index?.description ?? (-1).description)
+            destinationViewController.activity = activities[index!]
         }
      }
     
