@@ -41,6 +41,8 @@ class PlaylistController: UIViewController, UITableViewDataSource, UITableViewDe
         for song in mediaItemCollection.items {
             print("\(String(describing: song.value(forProperty: MPMediaItemPropertyTitle))) ID:\(String(describing: song.value(forProperty: MPMediaItemPropertyPersistentID)))")
             let music = Song(context: managedObjectContext)
+            print("SONG: \(song)")
+            print("ACTIVITY: \(self.activity)")
             music.id = song.value(forProperty: MPMediaItemPropertyPersistentID) as? String
             music.title = song.value(forProperty: MPMediaItemPropertyTitle) as? String
             music.artist = song.value(forProperty: MPMediaItemPropertyArtist) as? String

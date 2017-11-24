@@ -14,6 +14,7 @@ class ActivityViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var activityTableView: UITableView!
     private var activities = [Activity]()
     private var activity: Activity!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         activityTableView.dataSource = self
