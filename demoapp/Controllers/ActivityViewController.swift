@@ -17,12 +17,19 @@ class ActivityViewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         activityTableView.dataSource = self
         activityTableView.delegate   = self
+        managedObjectContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
         for act in ActivityType.all {
             //let activity = NSEntityDescription.insertNewObject(forEntityName: "Activity", into: managedObjectContext)
             let activity = Activity(context: managedObjectContext)
             activity.id   = Int32(act.rawValue)
             activity.name = act.description
             //activities.append(Activity(entity: act.description, insertInto: act.rawValue))
+            do {
+                try managedObjectContext.save()
+            } catch {
+                fatalError("Failure to save context: \(error)")
+            }
+            activities.append(activity)
         }
         // Do any additional setup after loading the view.
     }
